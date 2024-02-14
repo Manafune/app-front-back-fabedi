@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Registro de Proveedor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="css/forms.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Registro de Proveedor</h1>
+            <form action="registrarproveedor.jsp" method="post" accept-charset="UTF-8">
+                <label for="nombre">RUC:</label>
+                <input type="text" name="RUC" placeholder="RUC" maxlength="11" required>
+                <label for="nombre">Razon Social:</label>
+                <input type="text" name="RazonSocial" placeholder="Razon social" required>
+                <label for="apellido">Telefono:</label>
+                <input type="text" name="Telefono" placeholder="Telefono" maxlength="9" required>
+                <label for="dni">Direccion:</label>
+                <input type="text" name="Direccion" placeholder="Direccion" required>
+                <label for="dni">Estado:</label>
+                <input type="text" name="ProvEstado" placeholder="Estado 1=Activo, 2=Inactivo" required>
+                <input type="submit" value="Registrar">
+            </form>
+        </div>
+    </body>
+</html>

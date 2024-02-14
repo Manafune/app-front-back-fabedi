@@ -1,0 +1,113 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 14 ago. 2023, 09:07:32
+    Author     : migue
+*/
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Estilos para los botones */
+.btn {
+    margin-right: 10px;
+}
+
+/* Estilos para los formularios */
+.form-control {
+    border: 1px solid #ced4da;
+}
+
+/* Estilos para la tarjeta */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #343a40;
+    color: white;
+}
+
+/* Estilos para los encabezados */
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el pie de página */
+.card-footer {
+    background-color: #f8f9fa;
+    border-top: none;
+}
+
+/* Estilos para los inputs de solo lectura */
+input[readonly] {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+}
+
+/* Estilos para los botones de búsqueda */
+.btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+
+/* Estilos para la sección de datos del producto */
+.form-group.d-flex {
+    margin-bottom: 10px;
+}
+
+/* Estilos para la tarjeta de datos del producto */
+.card-body {
+    padding: 20px;
+}
+
+/* Estilos para la sección de búsqueda de producto */
+.card-body .form-group {
+    margin-bottom: 0;
+}
+
+/* Estilos para el título de datos del producto */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Estilos para la sección de productos */
+.col-sm-5,
+.col-sm-7 {
+    padding: 10px;
+}

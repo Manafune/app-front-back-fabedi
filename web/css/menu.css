@@ -1,0 +1,24 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 11 ene. 2024, 09:41:55
+    Author     : migue
+*/
+        /* Agrega un estilo personalizado para reducir el espacio en la barra de navegación */
+        .navbar {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Alinea los elementos de la lista a la izquierda */
+        .navbar-nav {
+            margin-right: auto;
+        }
+
+        /* Alinea el menú desplegable a la derecha */
+        .dropdown {
+            margin-left: auto;
+        }
+

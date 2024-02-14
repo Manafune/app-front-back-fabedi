@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/productos.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/dao/ProductosDAO.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/model/Usuario.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/eliminarproducto.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/controlador/Controlador.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/registrarproducto.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/model/Ventas.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/registrarventa.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/usuarios.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/dao/UsuarioDAO.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/connection/Conexion.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/index.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/editarusuario.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/ventas.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/dao/VentasDAO.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/controlador/Validar.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/eliminarusuario.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/formUsuario.html</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/proveedores.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/registrarusuario.jsp</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/web/formProducto.html</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/model/Proveedor.java</file>
+            <file>file:/C:/Users/migue/OneDrive/Documentos/NetBeansProjects/Fabedi/src/java/model/Producto.java</file>
+        </group>
+    </open-files>
+</project-private>
