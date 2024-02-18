@@ -42,11 +42,17 @@ Usuario u = UsuarioDAO.buscarporId(id);
                     <option value="USER" <%= u.getRol().equals("USER") ? "selected" : "" %>>USER</option>
                     <option value="ADMIN" <%= u.getRol().equals("ADMIN") ? "selected" : "" %>>ADMIN</option>
                 </select><br>
+               <div class="form-group">
+                <label for="Estado">Estado:</label>
+                <select class="form-control" name="Estado" required>
+                    <option value="1">Activo</option>
+                </select>
+                </div>
                 <input type="submit" value="Actualizar">
             </form>
         </div>
         <%
-            if((request.getParameter("IdUsuario")!=null)&(request.getParameter("Username")!=null)&(request.getParameter("Contrasena")!=null)&(request.getParameter("Nombres")!=null)&(request.getParameter("Apellidos")!=null)&(request.getParameter("Rol")!=null)){
+            if((request.getParameter("IdUsuario")!=null)&(request.getParameter("Username")!=null)&(request.getParameter("Contrasena")!=null)&(request.getParameter("Nombres")!=null)&(request.getParameter("Apellidos")!=null)&(request.getParameter("Rol")!=null)&(request.getParameter("Estado")!=null)){
                 try{
                     u.setIdUsuario(Integer.parseInt(request.getParameter("IdUsuario")));
                     u.setUsername(request.getParameter("Username"));
@@ -54,6 +60,7 @@ Usuario u = UsuarioDAO.buscarporId(id);
                     u.setNombres(request.getParameter("Nombres"));
                     u.setApellidos(request.getParameter("Apellidos"));
                     u.setRol(request.getParameter("Rol"));
+                    u.setEstado(Integer.parseInt(request.getParameter("Estado")));
                     try{
                         int i = UsuarioDAO.actualizar(u);
                         if(i>0){

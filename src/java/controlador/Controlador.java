@@ -159,11 +159,41 @@ public class Controlador extends HttpServlet {
                                     System.out.println("Error: El total debe ser mayor a 0 para generar la venta.");
                                 }
                                 break;
+                            case "Borrar":
+                            // Obtener el idProducto de la solicitud
+                            int idProductoBorrar = Integer.parseInt(request.getParameter("idProducto"));
+                            // Buscar el detalle del producto en la lista
+                            for (DetalleVenta detalle : lista) {
+                                if (detalle.getIdProducto() == idProductoBorrar) {
+                                    // Eliminar el detalle del producto de la lista
+                                    lista.remove(detalle);
+                                    break;
+                                }
+                            }
+                            // Recalcular el total
+                            total = 0.0;
+                            for (DetalleVenta detalle : lista) {
+                                total += detalle.getSubtotal();
+                            }
+                            numeroserie = vdao.GenerarSerie();
+                                if(numeroserie==null){
+                                    numeroserie="00000001";
+                                    request.setAttribute("nserie", numeroserie);
+                                }
+                                else{
+                                    int incrementar = Integer.parseInt(numeroserie);
+                                    GenerarSerie gs= new GenerarSerie();
+                                    numeroserie= gs.NumeroSerie(incrementar);
+                                    request.setAttribute("nserie", numeroserie);
+                                }
+                            request.setAttribute("total", total);
+                            request.setAttribute("lista", lista);
+                            break; 
                             case "CancelarVenta":
                                 lista = new ArrayList<>(); // Limpiar la lista de productos
                                 total = 0.0; // Restablecer el total a cero
                                 // Redirigir de nuevo a la página de registrar venta
-                                request.getRequestDispatcher("registrarventa.jsp").forward(request, response);
+                                request.getRequestDispatcher("ventas.jsp").forward(request, response);
                                 break;
                             default:
                                 System.out.println("default");

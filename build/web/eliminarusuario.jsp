@@ -18,7 +18,7 @@
     </body>
     <%
     try{
-        UsuarioDAO.cambiarEstadoUsuario(2,Integer.parseInt(request.getParameter("IdUsuario")));
+        UsuarioDAO.cambiarEstadoUsuario(Integer.parseInt(request.getParameter("IdUsuario")),2);
         response.sendRedirect("usuarios.jsp");
     }catch(Exception e){
         System.out.println(e);

@@ -11,7 +11,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <title>TEST</title>
+        <title>RegistrarVenta</title>
         <link href="css/agregar.css" rel="stylesheet" type="text/css"/>
         
         <style>
@@ -132,8 +132,7 @@
                                                 <td>${list.getCantidad()}</td>
                                                 <td>${list.getSubtotal()}</td>
                                                 <td class="d-flex">
-                                                    <a href="#" class="btn btn-warning">Editar</a>
-                                                    <a href="#" class="btn btn-danger" style="margin-left: 10px">Borrar</a>
+                                                    <a href="Controlador?menu=NuevaVenta&accion=Borrar&idProducto=${list.getIdProducto()}" class="btn btn-danger" style="margin: auto">Borrar</a>
                                                 </td>
                                             </tr>
                                         </c:forEach>
@@ -143,7 +142,7 @@
                             <div class="card-footer d-flex">
                                 <div class="col-sm-6">
                                     <a href="Controlador?menu=NuevaVenta&accion=GenerarVenta" class="btn btn-success">Generar Venta</a>
-                                    <button type="submit" class="btn btn-danger">Cancelar Venta</button>
+                                    <a href="Controlador?menu=NuevaVenta&accion=CancelarVenta" class="btn btn-danger">Cancelar Venta</a>
                                 </div>
                                 <div class="col-sm-3 ml-auto">
                                     <input type="text" name="total" value="S/. ${total}0" class="form-control" readonly>

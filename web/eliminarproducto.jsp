@@ -19,7 +19,7 @@
     </body>
     <%
     try{
-        ProductosDAO.cambiarEstadoProducto(2,Integer.parseInt(request.getParameter("IdProducto")));
+        ProductosDAO.cambiarEstadoProducto(Integer.parseInt(request.getParameter("IdProducto")),2);
         response.sendRedirect("productos.jsp");
     }catch(Exception e){
         System.out.println(e);
